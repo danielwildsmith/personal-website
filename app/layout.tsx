@@ -1,7 +1,7 @@
 "use client"
 
 import { Logo } from "@/components/logo";
-import { Providers } from "@/components/chakra";
+import { Providers, Theme } from "@/components/chakra";
 import { Container, Flex } from "@chakra-ui/react";
 import { Navbar } from "@/components/navbar";
 
@@ -20,7 +20,7 @@ export default function RootLayout({
       <body>
         <Providers>
           <Container maxWidth={'container.md'}>
-            <Flex mt={4}>
+            <Flex mt={3}>
               <Logo />
               <Navbar />
             </Flex>
