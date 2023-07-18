@@ -2,7 +2,8 @@
 
 import { Logo } from "@/components/logo";
 import { Providers } from "@/components/chakra";
-import { Container } from "@chakra-ui/react";
+import { Container, Flex } from "@chakra-ui/react";
+import { Navbar } from "@/components/navbar";
 
 export const metadata = {
   title: 'Daniel Wildsmith - Homepage',
@@ -19,7 +20,10 @@ export default function RootLayout({
       <body>
         <Providers>
           <Container maxWidth={'container.md'}>
-            <Logo />
+            <Flex mt={4}>
+              <Logo />
+              <Navbar />
+            </Flex>
             {children}
           </Container>
         </Providers>

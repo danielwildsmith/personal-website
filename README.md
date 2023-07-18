@@ -1,4 +1,5 @@
 ### Skeleton for pages:
+- Title: (Page) - Daniel Wildsmith
 - Collapsible Navbar w/ hamburger: Projects, Travel, Resume, Light/Dark Mode Toggle
 - Typing animation
 - Sections
@@ -9,8 +10,9 @@ You have reached my cozy space on the internet. Feel free to rest here and explo
 (I am a computer scientist student based in Gainesville, Florida.)
 ##### Section 1
 Daniel Wildsmith
+CS Student / Software Developer
 GitHub, LinkedIn links
-Photo
+Photo (aligned right)
 ##### Section 2
 About Me
 Link to Projects/Travel?

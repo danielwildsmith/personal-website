@@ -6,12 +6,12 @@ import { Text, useColorModeValue, Box } from '@chakra-ui/react'
 export const Logo = () => {
   return (
     (<Link href="/" scroll={false}>
-      <Box as="span" display={'inline-flex'} alignItems={'center'} marginTop={4} _hover={{color: '#88CCCA'}}>
+      <Box as="span" display={'inline-flex'} alignItems={'center'} _hover={{color: '#88CCCA'}}>
         <Text
-          // color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+          color={useColorModeValue('gray.800', 'whiteAlpha.900')}
           fontFamily='"M PLUS Rounded 1c", sans-serif'
           fontWeight="bold"
-          fontSize={'larger'}
+          fontSize={'large'}
         >
           Daniel Wildsmith
         </Text>
