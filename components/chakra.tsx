@@ -1,6 +1,5 @@
 'use client'
 
-import { CacheProvider } from '@chakra-ui/next-js'
 import { ChakraProvider } from '@chakra-ui/react'
 import { extendTheme, type ThemeConfig } from '@chakra-ui/react'
 import '@fontsource/m-plus-rounded-1c';
@@ -26,10 +25,12 @@ const fonts = {
 
 const colors = {
   dark: {
+    box: '#2b2b30',
     highlight: '#81E6D9',
     link: '#FF63C3'
   },
   light: {
+    box: '#f0ebe4',
     highlight: '#2C7A7B',
     link: '#3D7AED'
   }
@@ -52,3 +53,7 @@ export function Providers({
     
   )
 }
+
+export {
+  Container, Flex, Heading, Image, Stack, Text, Button, useColorModeValue
+} from '@chakra-ui/react'
