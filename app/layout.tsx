@@ -1,8 +1,5 @@
-"use client"
-
 import { Logo } from "@/components/logo";
-import { Providers, Theme } from "@/components/chakra";
-import { Container, Flex } from "@chakra-ui/react";
+import { Providers, Container, Flex } from "@/components/chakra";
 import { Navbar } from "@/components/navbar";
 
 export default function RootLayout({
