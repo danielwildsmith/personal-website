@@ -7,7 +7,6 @@
 
 #### About Page
 You have reached my cozy space on the internet. Feel free to rest here and explore a bit about me. 
-(I am a computer scientist student based in Gainesville, Florida.)
 ##### Section 1
 Daniel Wildsmith
 CS Student / Software Developer
@@ -30,6 +29,7 @@ Life
 (No typing animation text?)
 [Projects] > Name (Time Frame)
 Description
+- Category
 - (Website)
 - Stack
 - Source
