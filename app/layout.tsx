@@ -1,6 +1,7 @@
 import { Logo } from "@/components/logo";
 import { Providers, Container, Flex } from "@/components/chakra";
 import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 
 export default function RootLayout({
   children,
@@ -19,7 +20,9 @@ export default function RootLayout({
           </Container>
           <Container maxWidth={'540px'}>
             {children}
+            <Footer />
           </Container>
+
         </Providers>
       </body>
     </html>

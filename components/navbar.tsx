@@ -1,29 +1,24 @@
 "use client"
 
 import { HamburgerIcon, SunIcon, MoonIcon } from "@chakra-ui/icons"
-import { Box, HStack, IconButton, Link, Menu, MenuButton, MenuItem, MenuList, useColorMode } from "@chakra-ui/react"
+import { Box, HStack, IconButton, Menu, MenuButton, MenuItem, MenuList, useColorMode } from "@chakra-ui/react"
 import NextLink from 'next/link'
+import { NavbarLink } from "./links"
 
 export const Navbar = () => {
     const { colorMode, toggleColorMode } = useColorMode()
     return (
         <>
                 <HStack direction={'row'} spacing={7} ml={8} display={{base: 'none', md: 'flex'}}>
-                    <Link as={NextLink} href="/projects">
-                        Projects
-                    </Link>
-                    <Link as={NextLink} href="/travel">
-                        Travel
-                    </Link>
-                    <Link as={NextLink} href="/resume" target="_blank">
-                        Resume
-                    </Link>
+                    <NavbarLink content="Projects" link="/projects" />
+                    <NavbarLink content="Travel" link="/travel" />
+                    <NavbarLink content="Resume" link="/resume" />
                 </HStack>
 
             <Box flex={1} display={'flex'} justifyContent={'flex-end'}>
                 <IconButton
                     aria-label="Toggle theme"
-                    colorScheme={colorMode === 'light' ? 'purple' : 'orange'}
+                    // colorScheme={colorMode === 'light' ? 'purple' : 'orange'}
                     icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
                     onClick={toggleColorMode}
                 ></IconButton>

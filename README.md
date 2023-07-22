@@ -10,13 +10,11 @@ You have reached my cozy space on the internet. Feel free to rest here and explo
 ##### Section 1
 Daniel Wildsmith
 CS Student / Software Developer
-GitHub, LinkedIn links
+GitHub, LinkedIn, Mail links
 Photo (aligned right)
 ##### Section 2
 About Me
-Link to Projects/Travel?
-##### Section 3
-Contact Form
+Link to Projects
 
 #### Projects Page
 Nothing makes me lose track of time like working on a project. Here are some I am proud of.
@@ -41,18 +39,10 @@ I love exploring and experiencing new places. Japan is next!
 2/4 pictures with captions
 
 
-Animate all sections at once or "load in"?
-Wait to display/animate other sections until typing one finishes
+#### Animations
+- Typing animation (1s)
+- Load in animation rest of content
 
-#### Color Palette:
-##### Dark Mode:
-Background: #202023
-Green: #81E6D9
-Pink: #FF63C3
-##### Light Mode:
-Background: #F0E7DB
-Green: #2C7A7B
-Blue: #3D7AED
-
-Research domains
-Deploy on Vercel
+#### Deployment
+- Research domains
+- Deploy on Vercel

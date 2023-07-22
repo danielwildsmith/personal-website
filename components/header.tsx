@@ -1,11 +1,13 @@
 'use client'
 
-import { Text, useColorModeValue } from '@/components/chakra'
+import { Text, Box, useColorModeValue } from '@/components/chakra'
 
 export const PageHeader = ({ content }: { content: string }) => {
     return (
-        <Text fontSize={'18px'} mb={9} bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}>
-        {content}
-      </Text>
+        <Box bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={2} mb={9} borderRadius={5}>
+          <Text fontSize={'18px'}>
+            {content}
+          </Text>
+        </Box>
     )
 }
