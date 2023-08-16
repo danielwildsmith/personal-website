@@ -1,6 +1,8 @@
 import { AboutSection } from "@/components/about"
 import { Box, Button, Flex, Heading, Image, Stack, Text } from "@/components/chakra"
 import { GitHubIcon, LinkedInIcon, EmailIcon } from '@/components/icons'
+import { MoreSection } from "@/components/more"
+import { ProjectSection } from "@/components/projects"
 import { Metadata } from 'next'
 import Link from "next/link"
  
@@ -60,7 +62,8 @@ export default function Home() {
         <Box w={['0', '0', '15%']} />
         <Box overflowY={'auto'} w={{ base: '100%', md: '55%'}}>
           <AboutSection />
-          <AboutSection />
+          <ProjectSection />
+          <MoreSection />
         </Box>
       </Flex>
     </>

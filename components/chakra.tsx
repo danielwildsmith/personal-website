@@ -55,5 +55,5 @@ export function Providers({
 }
 
 export {
-  Container, Flex, Heading, Image, Stack, Text, Button, useColorModeValue, Box
+  Container, Flex, Heading, Image, Stack, Text, Button, useColorModeValue, Box, SimpleGrid
 } from '@chakra-ui/react'

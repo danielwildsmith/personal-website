@@ -1,7 +1,8 @@
-import { Box, Button, Flex, Heading, Stack, Text } from "@/components/chakra"
+"use client"
+
+import { Box, Heading, Stack, Text, Flex, Theme, useColorModeValue } from "@/components/chakra"
 import { TextLink } from "@/components/links"
-import Link from "next/link"
-import { ChevronRightIcon } from '@/components/icons'
+import { motion } from "framer-motion";
 
 export const AboutSection = () => {
     return (
@@ -18,16 +19,23 @@ export const AboutSection = () => {
                     <Text mb={3}>
                         I love to build and learn new things. Stemmed from my first ever Hello World program in Java, my passion for coding and software development 
                         {' '} has only grown as I have learned more. My recent projects have focused on full-stack web development.
-                    </Text> 
-                    <Text mb={2}>
-                        Outside of tech, I am obsessed with becoming stronger and recently have undertaken calisthenics. I also love <TextLink content="anime" link="https://youtu.be/1dDvMEisEC8"/>
-                        , minimalism, <TextLink content='traveling' link='/travel' />, soccer, and philosophy.
                     </Text>
-                    <Flex justifyContent={'center'}>
-                        <Button as={Link} rightIcon={<ChevronRightIcon />} variant={'solid'} colorScheme='teal' href={'/projects'}>
-                            My Projects
-                        </Button>
+                    <Flex w={'100%'} justifyContent={'center'} alignItems={'center'} mt={3}>
+                        <Box w={'35px'} h={'64px'} borderRadius={'3rem'} borderWidth={'4px'} borderColor={useColorModeValue('blackAlpha.300', 'whiteAlpha.300')} display={'flex'} justifyContent={'center'} alignItems={'flex-start'} p={2}>
+                            <motion.div
+                                animate={{
+                                    y: [0, 26, 0],
+                                }}
+                                transition={{
+                                    duration: 2.5,
+                                    repeat: Infinity,
+                                    repeatType: "loop",
+                                }}
+                                style={{width: 8, height: 8, borderRadius: '50%', backgroundColor: 'darkgrey' }}
+                            />
+                        </Box>
                     </Flex>
+            
                 </Stack>
             </Box>
         </>
