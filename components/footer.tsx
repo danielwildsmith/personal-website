@@ -4,7 +4,7 @@ import { TextLink } from '@/components/links'
 export const Footer = () => {
     return(
         <>
-            <Box position={'absolute'} bottom={0} w={'100%'} maxWidth={'850px'} display={'flex'} flexDir={'column'} alignItems={'center'} mb={5}>
+            <Box position={'absolute'} bottom={0} w={'100%'} display={'flex'} flexDir={'column'} alignItems={'center'} mb={5}>
                 <Text>
                     © Daniel Wildsmith 2023
                 </Text>
