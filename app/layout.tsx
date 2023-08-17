@@ -9,20 +9,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" style={{width: '100%', minHeight: '100%', margin: 0, padding: 0}}>
+      <body style={{width: '100%', minHeight: '100%', marginTop: 0, padding: 0}}>
         <Providers>
-          <Container maxWidth={'container.lg'}>
-            <Flex mt={3} mb={9}>
-              <Logo />
-              <Navbar />
-            </Flex>
-          </Container>
-          <Container maxWidth={'850px'}>
-            {children}
-            <Footer />
-          </Container>
-
+          <div style={{position: 'relative', minHeight: '100%'}}>
+            <Container maxWidth={'container.lg'}>
+              <Flex mt={3} mb={9}>
+                <Logo />
+                <Navbar />
+              </Flex>
+            </Container>
+            <Container maxWidth={'850px'}>
+              {children}
+              <Flex>
+                <Footer />
+              </Flex>
+            </Container>
+          </div>
         </Providers>
       </body>
     </html>

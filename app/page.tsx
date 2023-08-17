@@ -60,11 +60,11 @@ export default function Home() {
           </Flex>
         </Stack>
         <Box w={['0', '0', '15%']} />
-        <Box overflowY={'auto'} w={{ base: '100%', md: '55%'}}>
+        <Flex h={'auto'} flexDir={'column'} overflowY={'auto'} w={{ base: '100%', md: '55%'}}>
           <AboutSection />
           <ProjectSection />
           <MoreSection />
-        </Box>
+        </Flex>
       </Flex>
     </>
   )

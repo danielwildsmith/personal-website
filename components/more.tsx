@@ -15,8 +15,11 @@ export const MoreSection = () => {
                         Outside of tech, I ♥ calisthenics, <TextLink content="anime/manga" link="https://myanimelist.net/profile/danwildsmith"/>, minimalism, soccer, <TextLink content='lofi' link='https://www.youtube.com/@LofiGirl' />, and video games.
                     </Text>
                     <Flex justifyContent={'center'} mb={3}>
+                        <Button as={Link} rightIcon={<ChevronRightIcon />} variant={'solid'} colorScheme='teal' href={'/travel'} w={'fit-content'} mr={2}>
+                            My travels
+                        </Button>
                         <Button as={Link} rightIcon={<ChevronRightIcon />} variant={'solid'} colorScheme='teal' href={'/travel'} w={'fit-content'}>
-                            View my travels here!
+                            My resume
                         </Button>
                     </Flex>
                     
