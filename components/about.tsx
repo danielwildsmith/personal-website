@@ -13,7 +13,7 @@ export const AboutSection = () => {
                         About Me
                     </Heading>
                     <Text mt={1} mb={3}>
-                        Hello! I am currently a student at the <TextLink content='University of Florida' link='https://www.ufl.edu/'/> studying Computer Science and Philosophy.
+                        Hello! I am currently a student at the <TextLink content='University of Florida' link='https://www.ufl.edu/'/> in my third year, studying Computer Science and Philosophy.
                         {' '} This past summer, I worked at <TextLink content='JEA' link='https://www.jea.com/About/' /> as a Software Developer Intern. 
                     </Text>   
                     <Text mb={3}>
@@ -35,7 +35,6 @@ export const AboutSection = () => {
                             />
                         </Box>
                     </Flex>
-            
                 </Stack>
             </Box>
         </>

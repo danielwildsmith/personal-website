@@ -36,7 +36,7 @@ export const ProjectSection = () => {
                         <Project id="finance-dashboard" title="Finance Dashboard Website" image='images/projects/finance-dashboard-preview.png' />
                         <Project id="osc-website" title="UF Open Source Club Website" image="images/projects/osc-website-preview.png" />
                         <Project id="sudoku-solver" title="Sudoku Solver" image="images/projects/sudoku-solver-preview.png" />
-                        <Project id="lifting" title="Becoming Stronger" image="images/projects/lifting-preview.jpg" />
+                        <Project id="strength" title="Building Strength" image="images/projects/strength-preview.jpg" />
                     </SimpleGrid>
                 </Stack>
             </Flex>
