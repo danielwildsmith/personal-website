@@ -3,16 +3,16 @@
 import { HamburgerIcon, SunIcon, MoonIcon } from "@chakra-ui/icons"
 import { Box, HStack, IconButton, Menu, MenuButton, MenuItem, MenuList, useColorMode } from "@chakra-ui/react"
 import NextLink from 'next/link'
-import { NavbarLink } from "./links"
+import { PageLink } from "./links"
 
 export const Navbar = () => {
     const { colorMode, toggleColorMode } = useColorMode()
     return (
         <>
                 <HStack direction={'row'} spacing={7} ml={8} display={{base: 'none', md: 'flex'}}>
-                    <NavbarLink content="Projects" link="/projects" />
-                    <NavbarLink content="Travel" link="/travel" />
-                    <NavbarLink content="Resume" link="/resume" />
+                    <PageLink content="Projects" link="/#projects" />
+                    <PageLink content="Travel" link="/travel" />
+                    <PageLink content="Resume" link="/resume" />
                 </HStack>
 
             <Box flex={1} display={'flex'} justifyContent={'flex-end'}>

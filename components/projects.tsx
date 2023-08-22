@@ -23,7 +23,7 @@ export const Project = ({ id, title, image }: { id: string, title: string, image
 export const ProjectSection = () => {
     return (
         <>
-            <Flex flexDir={'column'} height={{ base: 'auto', md: '77vh'}} justifyContent={'center'} alignItems={'center'}>
+            <Flex flexDir={'column'} height={{ base: 'auto', md: '77vh'}} justifyContent={'center'} alignItems={'center'} id="projects">
                 <Stack display={'flex'} justifyContent={'center'} h={'100%'}>
                     <Heading size={'md'} w={'fit-content'} borderBottom={'1px solid'}>
                         Projects

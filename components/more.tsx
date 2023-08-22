@@ -21,7 +21,7 @@ export const MoreSection = () => {
                         <Button as={Link} rightIcon={<ChevronRightIcon />} variant={'solid'} colorScheme='teal' href={'/travel'} w={'fit-content'} mr={2}>
                             My travels
                         </Button>
-                        <Button as={Link} rightIcon={<ChevronRightIcon />} variant={'solid'} colorScheme='teal' href={'/travel'} w={'fit-content'}>
+                        <Button as={Link} rightIcon={<ChevronRightIcon />} variant={'solid'} colorScheme='teal' href={'/resume'} w={'fit-content'}>
                             My resume
                         </Button>
                     </Flex>

@@ -31,7 +31,7 @@ export default function BuildingStrength() {
             </SimpleGrid>
 
             <Flex alignItems='center' mt={2}>
-                <TextLink content='Projects' link='/projects' />
+                <TextLink content='Projects' link="/#projects" />
                 <ChevronRightIcon ml={1} mr={1}/>
                 <span style={{fontSize: '20px', fontWeight: 'bold', fontFamily: '"M PLUS Rounded 1c", sans-serif'}}>
                     Building Strength

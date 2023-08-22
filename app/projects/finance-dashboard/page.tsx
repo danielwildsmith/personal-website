@@ -20,7 +20,7 @@ export default function FinanceDashboard() {
                 />
             </Box>
             <Flex alignItems='center'>
-                <TextLink content='Projects' link='/projects' />
+                <TextLink content='Projects' link='/#projects' />
                 <ChevronRightIcon ml={1} mr={1}/>
                 <span style={{fontSize: '20px', fontWeight: 'bold', fontFamily: '"M PLUS Rounded 1c", sans-serif'}}>
                     Finance Dashboard

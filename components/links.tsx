@@ -10,14 +10,14 @@ export const TextLink = ({ content, link }: { content: string, link: string }) =
             as={Link}
             href={link}
             _hover={{cursor: 'pointer', borderBottom: `1px solid ${useColorModeValue(Theme.colors.light.link, Theme.colors.dark.link)}`}}
-            target='_blank'
+            target={content != 'Projects' ? '_blank' : ''}
         >
-        {content}
+            {content}
         </Text>
     )
 }
 
-export const NavbarLink = ({ content, link }: { content: string, link: string }) => {
+export const PageLink = ({ content, link }: { content: string, link: string }) => {
     return (
         <Text 
             as={Link}
