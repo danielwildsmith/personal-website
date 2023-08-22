@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { Badge, Box, Flex, List, ListItem, Text, SimpleGrid } from "@/components/chakra";
 import { TextLink } from '@/components/links';
 import { ChevronRightIcon } from '@/components/icons';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 
 export const metadata: Metadata = {
     title: 'Building Strength - Daniel Wildsmith',
