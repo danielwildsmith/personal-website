@@ -18,7 +18,7 @@ export default function Home() {
           <Image
             borderRadius='full'
             boxSize='200px'
-            src='https://bit.ly/dan-abramov'
+            src='images/pfp.jpg'
             alt='Daniel Wildsmith'
             mb={1}
           />

@@ -10,10 +10,14 @@ export const metadata: Metadata = {
 const Header = ({title, date}: {title: string, date: string}) => {
     return (
         <>
-            <Text fontSize={'20px'} fontWeight={'bold'} fontFamily={'"M PLUS Rounded 1c", sans-serif'}>
-                {title}
-            </Text>
-            <Badge>{date}</Badge>
+            <Flex alignItems='center' mt={5}>
+                <span style={{fontSize: '20px', fontWeight: 'bold', fontFamily: '"M PLUS Rounded 1c", sans-serif'}}>
+                    {title}
+                </span>
+                <Badge ml={4} mt={0.5}>{date}</Badge>
+            </Flex>
+
+            
         </>
     )
 }
@@ -129,7 +133,7 @@ export default function TravelPage() {
         </SimpleGrid>
 
         <Header title='Cashiers, North Carolina' date='August 2022' />
-        <SimpleGrid columns={{ base: 2, md: 4 }} h={'25vh'} spacing={2}>
+        <SimpleGrid columns={{ base: 2, md: 4 }} h={'25vh'} spacing={2} mb={2}>
             <Box h={'100%'} position="relative">
                     <Image
                         src='/images/travel/nc1-1.JPG'
