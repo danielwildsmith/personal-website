@@ -3,6 +3,7 @@ import { Badge, Box, Flex, List, ListItem, Text, SimpleGrid } from "@/components
 import { TextLink } from '@/components/links';
 import { ChevronRightIcon } from '@/components/icons';
 import Image from "next/legacy/image";
+import PageWrapper from '@/components/animations';
 
 export const metadata: Metadata = {
     title: 'Building Strength - Daniel Wildsmith',
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 export default function BuildingStrength() {
     return (
         <>
+        <PageWrapper>
             <SimpleGrid columns={{ base: 1, md: 2 }} h={'52vh'}>
                 <Box h={'100%'} position="relative">
                     <Image
@@ -57,6 +59,7 @@ export default function BuildingStrength() {
                     <span>Cutting</span>
                 </ListItem>
             </List>
+        </PageWrapper>
         </>
     )
 }

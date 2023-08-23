@@ -1,4 +1,5 @@
 import { AboutSection } from "@/components/about"
+import PageWrapper from "@/components/animations"
 import { Box, Button, Flex, Heading, Image, Stack, Text } from "@/components/chakra"
 import { GitHubIcon, LinkedInIcon, EmailIcon } from '@/components/icons'
 import { MoreSection } from "@/components/more"
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+    <PageWrapper>
       <Flex height={{ base: 'auto', md: '77vh'}} direction={{ base: 'column', md: 'row' }}>
         <Stack gap={0} display={'flex'} justifyContent={'center'} alignItems={'center'} w={{ base: '100%', md: '30%'}}>
           <Image
@@ -66,6 +68,7 @@ export default function Home() {
           <MoreSection />
         </Box>
       </Flex>
+    </PageWrapper>
     </>
   )
 }

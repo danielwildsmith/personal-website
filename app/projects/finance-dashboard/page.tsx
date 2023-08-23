@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import { Badge, Box, Flex, Image, List, ListItem, Text } from "@/components/chakra";
 import { TextLink } from '@/components/links';
 import { ChevronRightIcon, ExternalLinkIcon } from '@/components/icons';
+import PageWrapper from '@/components/animations';
 
 export const metadata: Metadata = {
     title: 'Finance Dashboard - Daniel Wildsmith',
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 export default function FinanceDashboard() {
     return (
         <>
+        <PageWrapper>
             <Box display={'flex'} justifyContent={'center'}>
                 <Image
                     src='../images/projects/finance-dashboard-1.png'
@@ -54,7 +56,7 @@ export default function FinanceDashboard() {
                     <span>React, NodeJS, MySQL</span>
                 </ListItem>
             </List>
-    
+        </PageWrapper>
         </>
     )
 }

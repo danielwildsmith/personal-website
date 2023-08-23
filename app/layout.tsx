@@ -9,7 +9,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" style={{width: '100%', minHeight: '100%', margin: 0, padding: 0}}>
+    <html lang="en" style={{width: '100%', minHeight: '100%', margin: 0, padding: 0, scrollBehavior: 'smooth'}}>
 <body style={{display: 'flex', flexDirection: 'column', minHeight: '100vh'}}>
   <Providers>
     <div style={{flex: '1'}}>

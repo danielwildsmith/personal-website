@@ -32,8 +32,8 @@ export const Navbar = () => {
                             variant='outline'
                         />
                         <MenuList>
-                            <MenuItem as={NextLink} href="/">About</MenuItem>
-                            <MenuItem as={NextLink} href="/projects">Projects</MenuItem>
+                            <MenuItem as={NextLink} href="/#about">About</MenuItem>
+                            <MenuItem as={NextLink} href="/#projects">Projects</MenuItem>
                             <MenuItem as={NextLink} href="/travel">Travel</MenuItem>
                             <MenuItem as={NextLink} href="/resume" target="_blank">Resume</MenuItem>
                         </MenuList>

@@ -14,7 +14,7 @@ export const AboutSection = () => {
                     </Heading>
                     <Text mt={1} mb={3}>
                         Hello! I am currently a student at the <TextLink content='University of Florida' link='https://www.ufl.edu/'/> in my third year, studying Computer Science and Philosophy.
-                        {' '} This past summer, I worked at <TextLink content='JEA' link='https://www.jea.com/About/' /> as a Software Developer Intern. 
+                        {' '} This past summer, I worked at <TextLink content='JEA' link='https://www.jea.com/About/' /> as a Software Developer Intern in Jacksonville, FL. 
                     </Text>   
                     <Text mb={3}>
                         I love to build and learn new things. Stemmed from my first ever Hello World program in Java, my passion for coding and software development 

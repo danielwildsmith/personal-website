@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import { Badge, Box, Flex, List, ListItem, Text, SimpleGrid } from "@/components/chakra";
 import Link from "next/link"
 import Image from "next/legacy/image";
+import PageWrapper from '@/components/animations';
  
 export const metadata: Metadata = {
   title: 'Travel - Daniel Wildsmith',
@@ -25,6 +26,8 @@ const Header = ({title, date}: {title: string, date: string}) => {
 export default function TravelPage() {
   return (
     <>
+    <PageWrapper>
+
         <Header title='Newcastle, England' date='April 2023' />
         <SimpleGrid columns={{ base: 2, md: 4 }} h={'25vh'} spacing={2}>
         <Box h={'100%'} position="relative">
@@ -167,6 +170,8 @@ export default function TravelPage() {
                     />
             </Box>
         </SimpleGrid>
+    </PageWrapper>
+
     </>
   )
 }

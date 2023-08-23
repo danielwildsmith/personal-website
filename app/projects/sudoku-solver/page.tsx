@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import { Badge, Box, Flex, Image, List, ListItem, Text } from "@/components/chakra";
 import { TextLink } from '@/components/links';
 import { ChevronRightIcon, ExternalLinkIcon } from '@/components/icons';
+import PageWrapper from '@/components/animations';
 
 export const metadata: Metadata = {
     title: 'Sudoku Solver - Daniel Wildsmith',
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 export default function SudokuSolver() {
     return (
         <>
+        <PageWrapper>
             <Box display={'flex'} justifyContent={'center'}>
                 <Image
                     src='../images/projects/sudoku-solver-1.gif'
@@ -47,6 +49,7 @@ export default function SudokuSolver() {
                     <span>Python, Pygame</span>
                 </ListItem>
             </List>
+        </PageWrapper>
         </>
     )
 }

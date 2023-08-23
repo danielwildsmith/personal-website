@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import { Badge, Box, Flex, Image, List, ListItem, Text } from "@/components/chakra";
 import { TextLink } from '@/components/links';
 import { ChevronRightIcon, ExternalLinkIcon } from '@/components/icons';
+import PageWrapper from '@/components/animations';
 
 export const metadata: Metadata = {
     title: 'UF OSC Website - Daniel Wildsmith',
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 export default function OSCWebsite() {
     return (
         <>
+        <PageWrapper>
             <Box display={'flex'} justifyContent={'center'}>
                 <Image
                     src='../images/projects/osc-website-1.png'
@@ -56,7 +58,7 @@ export default function OSCWebsite() {
                     <span>NodeJS, EJS, CSS, MongoDB</span>
                 </ListItem>
             </List>
-    
+        </PageWrapper>
         </>
     )
 }
