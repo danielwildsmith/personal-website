@@ -1,10 +1,31 @@
+"use client"
+
 import { Box, Heading, Stack, Text, SimpleGrid, Image, Flex } from "@/components/chakra"
 import Link from "next/link"
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 
 export const Project = ({ id, title, image }: { id: string, title: string, image: string }) => {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+    });
+
+    const variants = {
+        hidden: { opacity: 0, x: -200 },
+        show: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                duration: 0.9,
+                ease: [0.17, 0.55, 0.55, 1],
+                delay: 0.5,
+            },
+        },
+    };
+
     return (
-        <>
-            <Box as={Link} href={`/projects/${id}`} w={'100%'}>
+        <Box as={Link} href={`/projects/${id}`} w={'100%'}>
+            <motion.div ref={ref} variants={variants} initial="hidden" animate={inView ? 'show' : 'hidden'}>
                 <Image
                     src={image}
                     alt={title}
@@ -14,11 +35,12 @@ export const Project = ({ id, title, image }: { id: string, title: string, image
                 <Text textAlign={'center'} fontSize={17} >
                     {title}
                 </Text>
-            </Box>
-        </>
-    )
-    
-}
+            </motion.div>
+        </Box>
+    );
+};
+
+
 
 export const ProjectSection = () => {
     return (
