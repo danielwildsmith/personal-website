@@ -31,7 +31,7 @@ export default function SudokuSolver() {
             </Flex>
 
             <Text mt={3} textIndent={'1rem'}>
-                A remake of the classic game "Sudoku" that can visually auto solve any complex board using a backtracking algorithm.
+                A remake of the classic game {"Sudoku"} that can visually auto solve any complex board using a backtracking algorithm.
             </Text>
 
             <List mx={5} mt={5}>
