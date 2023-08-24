@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export const AboutSection = () => {
     return (
         <>
-            <Box display={'flex'} h={'77vh'} justifyContent={'center'} alignItems={'center'} id="about">
+            <Box display={'flex'} h={'77vh'} justifyContent={'center'} alignItems={'center'} id={"about"}>
                 <Stack display={'flex'} justifyContent={'center'} h={'100%'}>
                     <Heading size={'md'} w={'fit-content'} borderBottom={'1px solid'}>
                         About Me

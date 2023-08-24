@@ -1,6 +1,7 @@
 'use client'
 
 import { Text, useColorModeValue, Theme } from '@/components/chakra'
+import { MenuItem } from '@chakra-ui/react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { MouseEvent } from 'react'
@@ -40,9 +41,35 @@ export const PageLink = ({ content, link, style }: { content: string, link: stri
             href={link}
             onClick={handleClick}
             _hover={content == 'Daniel Wildsmith' ? {cursor: 'pointer'} : {cursor: 'pointer', borderBottom: `1px solid`}}
-            target={content == 'Resume' ? '_blank' : ''}
+            target={link == '/resume.pdf' ? '_blank' : ''}
         >
         {content}
         </Text>
+    )
+}
+
+export const MenuItemPageLink = ({ content, link, style }: { content: string, link: string, style?: React.CSSProperties }) => {
+    const router = useRouter();
+
+    const handleClick = (e : MouseEvent) => {
+        e.preventDefault();
+        const hash = link.substring(link.indexOf('#') + 1);
+        const element = document.getElementById(hash);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+            router.push(`/#${hash}`, { scroll: false });
+        } else {
+            router.push(link);
+        }
+    };
+
+    return (
+        <MenuItem 
+            as={Link}
+            href={link}
+            onClick={handleClick}
+        >
+            {content}
+        </MenuItem>
     )
 }

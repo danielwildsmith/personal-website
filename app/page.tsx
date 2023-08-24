@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
     <PageWrapper>
-      <Flex height={{ base: 'auto', md: '77vh'}} direction={{ base: 'column', md: 'row' }}>
+      <Flex height={{ base: 'auto', md: '77vh'}} direction={{ base: 'column', md: 'row' }} >
         <Stack gap={0} display={'flex'} justifyContent={'center'} alignItems={'center'} w={{ base: '100%', md: '30%'}}>
           <Image
             borderRadius='full'
@@ -62,7 +62,7 @@ export default function Home() {
           </Flex>
         </Stack>
         <Box w={['0', '0', '15%']} />
-        <Box overflowY={'auto'} w={{ base: '100%', md: '55%'}}>
+        <Box overflowY={'auto'} w={{ base: '100%', md: '55%'}} >
           <AboutSection />
           <ProjectSection />
           <MoreSection />

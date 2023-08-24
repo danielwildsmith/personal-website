@@ -1,9 +1,9 @@
 "use client"
 
 import { HamburgerIcon, SunIcon, MoonIcon } from "@chakra-ui/icons"
-import { Box, HStack, IconButton, Menu, MenuButton, MenuItem, MenuList, useColorMode } from "@chakra-ui/react"
+import { Box, HStack, IconButton, Menu, MenuButton, MenuItem, MenuList, useColorMode, Text } from "@chakra-ui/react"
 import NextLink from 'next/link'
-import { PageLink } from "./links"
+import { MenuItemPageLink, PageLink } from "./links"
 
 export const Navbar = () => {
     const { colorMode, toggleColorMode } = useColorMode()
@@ -12,7 +12,14 @@ export const Navbar = () => {
                 <HStack direction={'row'} spacing={7} ml={8} display={{base: 'none', md: 'flex'}}>
                     <PageLink content="Projects" link="/#projects" />
                     <PageLink content="Travel" link="/travel" />
-                    <PageLink content="Resume" link="/resume" />
+                    <Text 
+                        as="a"
+                        href={"/resume.pdf"}
+                        _hover={{cursor: 'pointer', borderBottom: `1px solid`}}
+                        target={'_blank'}
+                    >
+                        Resume
+                    </Text>
                 </HStack>
 
             <Box flex={1} display={'flex'} justifyContent={'flex-end'}>
@@ -32,10 +39,16 @@ export const Navbar = () => {
                             variant='outline'
                         />
                         <MenuList>
-                            <MenuItem as={NextLink} href="/#about">About</MenuItem>
-                            <MenuItem as={NextLink} href="/#projects">Projects</MenuItem>
-                            <MenuItem as={NextLink} href="/travel">Travel</MenuItem>
-                            <MenuItem as={NextLink} href="/resume" target="_blank">Resume</MenuItem>
+                            <MenuItemPageLink content='About' link="/#about" />
+                            <MenuItemPageLink content='Projects' link="/#projects" />
+                            <MenuItemPageLink content='Travel' link="/travel" />
+                            <MenuItem 
+                                as={NextLink}
+                                href={'/resume.pdf'}
+                                target="_blank"
+                            >
+                                Resume
+                            </MenuItem>
                         </MenuList>
                     </Menu>
                 </Box>

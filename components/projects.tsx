@@ -4,6 +4,7 @@ import { Box, Heading, Stack, Text, SimpleGrid, Image, Flex } from "@/components
 import Link from "next/link"
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
+import Typed from "react-typed";
 
 export const Project = ({ id, title, image }: { id: string, title: string, image: string }) => {
     const { ref, inView } = useInView({
@@ -31,6 +32,7 @@ export const Project = ({ id, title, image }: { id: string, title: string, image
                     alt={title}
                     borderRadius={'12px'}
                     style={{ aspectRatio: "4 / 2.5" }} 
+                    _hover={{ transform: 'scale(1.05)' }}
                 />
                 <Text textAlign={'center'} fontSize={17} >
                     {title}
@@ -43,17 +45,18 @@ export const Project = ({ id, title, image }: { id: string, title: string, image
 
 
 export const ProjectSection = () => {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+    });
+
     return (
         <>
-            <Flex flexDir={'column'} height={{ base: 'auto', md: '77vh'}} justifyContent={'center'} alignItems={'center'} id="projects">
+            <Flex flexDir={'column'} height={{ base: 'auto', md: '77vh'}} justifyContent={'center'} alignItems={'center'} id="projects" overflowX={'hidden'}>
                 <Stack display={'flex'} justifyContent={'center'} h={'100%'}>
-                    <Heading size={'md'} w={'fit-content'} borderBottom={'1px solid'}>
+                    <Heading size={'md'} w={'fit-content'} borderBottom={'1px solid'} ref={ref}> 
                         Projects
                     </Heading>
-                    <Text mt={0.5} mb={3} >
-                        Nothing makes me lose track of time like working on a project. Here are some I am proud of.
-                    </Text>
-
+                    {inView ? <Typed strings={["Nothing makes me lose track of time like working on a project. Here are some I am proud of."]} typeSpeed={25} /> : <></> }
                     <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6} maxH={{ base: '100%', md: '55vh'}}>
                         <Project id="finance-dashboard" title="Finance Dashboard Website" image='images/projects/finance-dashboard-preview.png' />
                         <Project id="osc-website" title="UF Open Source Club Website" image="images/projects/osc-website-preview.png" />
